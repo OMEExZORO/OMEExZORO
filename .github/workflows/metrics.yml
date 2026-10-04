@@ -11,16 +11,6 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.base.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: header, activity, repositories
-          config_timezone: Asia/Kolkata
-          config_display: large
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
-      - uses: lowlighter/metrics@latest
-        with:
           filename: metrics.languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
